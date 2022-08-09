@@ -14,6 +14,6 @@
     },
     "scripts": {
         "wdio": "wdio run test/wdio.conf.ts",
-        "chrome:test": "npx wdio run ./config/wdio.conf.ts"
+        "chrome:test": "npx wdio run ./config/chrome.conf.ts"
     }
 }

@@ -1,8 +1,8 @@
 import Page from "../../page";
 import LoginRepo from "../repos/login.repo";
+import testData from "../../specs/data/test.json";
 
 class LoginPage extends Page {
-
     async open() {
         await super.open('http://ghezemice.hu/oktatas/xpath.html');
     }
@@ -16,6 +16,10 @@ class LoginPage extends Page {
         this.loginNameInpt.setValue(loginName);
         this.passwordInpt.setValue(password);
         this.loginBtn.click();
+    }
+
+    async typeEmail(txt: string) {
+        await this.emailInpt.setValue(testData.loginEmail);
     }
 }
 

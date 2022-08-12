@@ -1,6 +1,5 @@
 import Page from "../../page";
 import LoginRepo from "../repos/login.repo";
-import testData from "../../specs/data/test.json";
 
 class LoginPage extends Page {
     async open() {
@@ -19,7 +18,7 @@ class LoginPage extends Page {
     }
 
     async typeEmail(txt: string) {
-        await this.emailInpt.setValue(testData.loginEmail);
+        await this.emailInpt.setValue(txt);
     }
 }
 

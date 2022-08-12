@@ -1,4 +1,4 @@
-import LoginPage from "../ghezemice/pages/login.page";
+import LoginPage from "../../browser/pages/login.page";
 import testData from "./data/test.json";
 
 describe('sample test', () => {
